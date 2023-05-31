@@ -91,7 +91,8 @@ const useAnimation = (elementRef, animationId, playing) => {
     });
   };
 
-  const animationInFlexibleConfig = () => {
+  const animationInFlexibleConfig = (animationId) => {
+    console.log("animationId", animationId);
     return {
       from: {
         cropWidth: isAnimating
